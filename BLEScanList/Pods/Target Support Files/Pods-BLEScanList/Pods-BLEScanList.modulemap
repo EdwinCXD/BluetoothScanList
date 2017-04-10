@@ -1,0 +1,6 @@
+framework module Pods_BLEScanList {
+  umbrella header "Pods-BLEScanList-umbrella.h"
+
+  export *
+  module * { export * }
+}

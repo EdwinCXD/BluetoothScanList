@@ -17,6 +17,9 @@
 		000998951E9B155E00C886AE /* BLEScanListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998941E9B155E00C886AE /* BLEScanListTests.m */; };
 		000998A01E9B155E00C886AE /* BLEScanListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0009989F1E9B155E00C886AE /* BLEScanListUITests.m */; };
 		000998B71E9B1A5300C886AE /* EDBluetoothModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998B61E9B1A5300C886AE /* EDBluetoothModel.m */; };
+		000998BA1E9B1F7100C886AE /* EDScanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998B91E9B1F7100C886AE /* EDScanListVC.m */; };
+		000998BE1E9B242000C886AE /* EDBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998BD1E9B242000C886AE /* EDBluetoothManager.m */; };
+		06D04BE4B8DEBED7159EB2F4 /* Pods_BLEScanList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A54AEAF719EB357CB8799E8 /* Pods_BLEScanList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,13 @@
 		000998A11E9B155E00C886AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000998B51E9B1A5300C886AE /* EDBluetoothModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDBluetoothModel.h; sourceTree = "<group>"; };
 		000998B61E9B1A5300C886AE /* EDBluetoothModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDBluetoothModel.m; sourceTree = "<group>"; };
+		000998B81E9B1F7100C886AE /* EDScanListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDScanListVC.h; sourceTree = "<group>"; };
+		000998B91E9B1F7100C886AE /* EDScanListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDScanListVC.m; sourceTree = "<group>"; };
+		000998BC1E9B242000C886AE /* EDBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDBluetoothManager.h; sourceTree = "<group>"; };
+		000998BD1E9B242000C886AE /* EDBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDBluetoothManager.m; sourceTree = "<group>"; };
+		27DFFE2F9F7D47F93A4793CE /* Pods-BLEScanList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEScanList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEScanList/Pods-BLEScanList.debug.xcconfig"; sourceTree = "<group>"; };
+		8A54AEAF719EB357CB8799E8 /* Pods_BLEScanList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEScanList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C13E982FFAE8D8A908D723 /* Pods-BLEScanList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEScanList.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEScanList/Pods-BLEScanList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D04BE4B8DEBED7159EB2F4 /* Pods_BLEScanList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +101,8 @@
 				000998931E9B155E00C886AE /* BLEScanListTests */,
 				0009989E1E9B155E00C886AE /* BLEScanListUITests */,
 				000998751E9B155E00C886AE /* Products */,
+				B7250C01E286A7E724FF1586 /* Pods */,
+				FCB670FA90695673B920CC0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,7 +163,10 @@
 		000998B31E9B18C300C886AE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				000998BB1E9B23E900C886AE /* Tools */,
 				000998B41E9B18F700C886AE /* Models */,
+				000998B81E9B1F7100C886AE /* EDScanListVC.h */,
+				000998B91E9B1F7100C886AE /* EDScanListVC.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -164,6 +180,32 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		000998BB1E9B23E900C886AE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				000998BC1E9B242000C886AE /* EDBluetoothManager.h */,
+				000998BD1E9B242000C886AE /* EDBluetoothManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B7250C01E286A7E724FF1586 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27DFFE2F9F7D47F93A4793CE /* Pods-BLEScanList.debug.xcconfig */,
+				C5C13E982FFAE8D8A908D723 /* Pods-BLEScanList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCB670FA90695673B920CC0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A54AEAF719EB357CB8799E8 /* Pods_BLEScanList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 000998A41E9B155E00C886AE /* Build configuration list for PBXNativeTarget "BLEScanList" */;
 			buildPhases = (
+				0BDF2FBEFAFF18D70C52B793 /* [CP] Check Pods Manifest.lock */,
 				000998701E9B155E00C886AE /* Sources */,
 				000998711E9B155E00C886AE /* Frameworks */,
 				000998721E9B155E00C886AE /* Resources */,
+				95053C3D8683A14CE404D986 /* [CP] Embed Pods Frameworks */,
+				8BDC9C93C6BC3C7505F80872 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +341,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BDF2FBEFAFF18D70C52B793 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BDC9C93C6BC3C7505F80872 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLEScanList/Pods-BLEScanList-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95053C3D8683A14CE404D986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLEScanList/Pods-BLEScanList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		000998701E9B155E00C886AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -303,9 +396,11 @@
 			files = (
 				000998851E9B155E00C886AE /* BLEScanList.xcdatamodeld in Sources */,
 				000998B71E9B1A5300C886AE /* EDBluetoothModel.m in Sources */,
+				000998BA1E9B1F7100C886AE /* EDScanListVC.m in Sources */,
 				0009987F1E9B155E00C886AE /* ViewController.m in Sources */,
 				0009987C1E9B155E00C886AE /* AppDelegate.m in Sources */,
 				000998791E9B155E00C886AE /* main.m in Sources */,
+				000998BE1E9B242000C886AE /* EDBluetoothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +549,7 @@
 		};
 		000998A51E9B155E00C886AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27DFFE2F9F7D47F93A4793CE /* Pods-BLEScanList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BHG5LXUSN8;
@@ -466,6 +562,7 @@
 		};
 		000998A61E9B155E00C886AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C13E982FFAE8D8A908D723 /* Pods-BLEScanList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BHG5LXUSN8;
