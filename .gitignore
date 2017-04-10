@@ -21,6 +21,9 @@ xcuserdata/
 *.moved-aside
 *.xcuserstate
 
+# 排除OS X的文件夹显示属性目录
+.DS_Store
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
