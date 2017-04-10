@@ -16,6 +16,7 @@
 		0009988A1E9B155E00C886AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000998881E9B155E00C886AE /* LaunchScreen.storyboard */; };
 		000998951E9B155E00C886AE /* BLEScanListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998941E9B155E00C886AE /* BLEScanListTests.m */; };
 		000998A01E9B155E00C886AE /* BLEScanListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0009989F1E9B155E00C886AE /* BLEScanListUITests.m */; };
+		000998B71E9B1A5300C886AE /* EDBluetoothModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998B61E9B1A5300C886AE /* EDBluetoothModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0009989B1E9B155E00C886AE /* BLEScanListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEScanListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0009989F1E9B155E00C886AE /* BLEScanListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEScanListUITests.m; sourceTree = "<group>"; };
 		000998A11E9B155E00C886AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000998B51E9B1A5300C886AE /* EDBluetoothModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDBluetoothModel.h; sourceTree = "<group>"; };
+		000998B61E9B1A5300C886AE /* EDBluetoothModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDBluetoothModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		000998761E9B155E00C886AE /* BLEScanList */ = {
 			isa = PBXGroup;
 			children = (
+				000998B31E9B18C300C886AE /* Classes */,
 				0009987A1E9B155E00C886AE /* AppDelegate.h */,
 				0009987B1E9B155E00C886AE /* AppDelegate.m */,
 				0009987D1E9B155E00C886AE /* ViewController.h */,
@@ -141,6 +145,23 @@
 				000998A11E9B155E00C886AE /* Info.plist */,
 			);
 			path = BLEScanListUITests;
+			sourceTree = "<group>";
+		};
+		000998B31E9B18C300C886AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				000998B41E9B18F700C886AE /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		000998B41E9B18F700C886AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000998B51E9B1A5300C886AE /* EDBluetoothModel.h */,
+				000998B61E9B1A5300C886AE /* EDBluetoothModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +226,7 @@
 		0009986C1E9B155D00C886AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ED;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = EdwinChen;
 				TargetAttributes = {
@@ -280,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				000998851E9B155E00C886AE /* BLEScanList.xcdatamodeld in Sources */,
+				000998B71E9B1A5300C886AE /* EDBluetoothModel.m in Sources */,
 				0009987F1E9B155E00C886AE /* ViewController.m in Sources */,
 				0009987C1E9B155E00C886AE /* AppDelegate.m in Sources */,
 				000998791E9B155E00C886AE /* main.m in Sources */,
@@ -522,6 +545,7 @@
 				000998A61E9B155E00C886AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		000998A71E9B155E00C886AE /* Build configuration list for PBXNativeTarget "BLEScanListTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +554,7 @@
 				000998A91E9B155E00C886AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		000998AA1E9B155E00C886AE /* Build configuration list for PBXNativeTarget "BLEScanListUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +563,7 @@
 				000998AC1E9B155E00C886AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
