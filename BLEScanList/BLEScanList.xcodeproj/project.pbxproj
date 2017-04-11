@@ -18,7 +18,8 @@
 		000998A01E9B155E00C886AE /* BLEScanListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0009989F1E9B155E00C886AE /* BLEScanListUITests.m */; };
 		000998B71E9B1A5300C886AE /* EDBluetoothModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998B61E9B1A5300C886AE /* EDBluetoothModel.m */; };
 		000998BA1E9B1F7100C886AE /* EDScanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998B91E9B1F7100C886AE /* EDScanListVC.m */; };
-		000998BE1E9B242000C886AE /* EDBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 000998BD1E9B242000C886AE /* EDBluetoothManager.m */; };
+		001C3F4B1E9C5A4B00409F25 /* EDScanListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001C3F491E9C5A4B00409F25 /* EDScanListCell.m */; };
+		001C3F4C1E9C5A4B00409F25 /* EDScanListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001C3F4A1E9C5A4B00409F25 /* EDScanListCell.xib */; };
 		06D04BE4B8DEBED7159EB2F4 /* Pods_BLEScanList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A54AEAF719EB357CB8799E8 /* Pods_BLEScanList.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +62,9 @@
 		000998B61E9B1A5300C886AE /* EDBluetoothModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDBluetoothModel.m; sourceTree = "<group>"; };
 		000998B81E9B1F7100C886AE /* EDScanListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDScanListVC.h; sourceTree = "<group>"; };
 		000998B91E9B1F7100C886AE /* EDScanListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDScanListVC.m; sourceTree = "<group>"; };
-		000998BC1E9B242000C886AE /* EDBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDBluetoothManager.h; sourceTree = "<group>"; };
-		000998BD1E9B242000C886AE /* EDBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDBluetoothManager.m; sourceTree = "<group>"; };
+		001C3F481E9C5A4B00409F25 /* EDScanListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDScanListCell.h; sourceTree = "<group>"; };
+		001C3F491E9C5A4B00409F25 /* EDScanListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDScanListCell.m; sourceTree = "<group>"; };
+		001C3F4A1E9C5A4B00409F25 /* EDScanListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EDScanListCell.xib; sourceTree = "<group>"; };
 		27DFFE2F9F7D47F93A4793CE /* Pods-BLEScanList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEScanList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLEScanList/Pods-BLEScanList.debug.xcconfig"; sourceTree = "<group>"; };
 		8A54AEAF719EB357CB8799E8 /* Pods_BLEScanList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLEScanList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C13E982FFAE8D8A908D723 /* Pods-BLEScanList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLEScanList.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLEScanList/Pods-BLEScanList.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000087841E9C579400A4EAFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				001C3F481E9C5A4B00409F25 /* EDScanListCell.h */,
+				001C3F491E9C5A4B00409F25 /* EDScanListCell.m */,
+				001C3F4A1E9C5A4B00409F25 /* EDScanListCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0009986B1E9B155D00C886AE = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 		000998B31E9B18C300C886AE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				000087841E9C579400A4EAFB /* Views */,
 				000998BB1E9B23E900C886AE /* Tools */,
 				000998B41E9B18F700C886AE /* Models */,
 				000998B81E9B1F7100C886AE /* EDScanListVC.h */,
@@ -183,8 +196,6 @@
 		000998BB1E9B23E900C886AE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				000998BC1E9B242000C886AE /* EDBluetoothManager.h */,
-				000998BD1E9B242000C886AE /* EDBluetoothManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -320,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0009988A1E9B155E00C886AE /* LaunchScreen.storyboard in Resources */,
+				001C3F4C1E9C5A4B00409F25 /* EDScanListCell.xib in Resources */,
 				000998871E9B155E00C886AE /* Assets.xcassets in Resources */,
 				000998821E9B155E00C886AE /* Main.storyboard in Resources */,
 			);
@@ -399,8 +411,8 @@
 				000998BA1E9B1F7100C886AE /* EDScanListVC.m in Sources */,
 				0009987F1E9B155E00C886AE /* ViewController.m in Sources */,
 				0009987C1E9B155E00C886AE /* AppDelegate.m in Sources */,
+				001C3F4B1E9C5A4B00409F25 /* EDScanListCell.m in Sources */,
 				000998791E9B155E00C886AE /* main.m in Sources */,
-				000998BE1E9B242000C886AE /* EDBluetoothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

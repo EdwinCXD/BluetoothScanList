@@ -13,5 +13,7 @@
 
 @property (nonatomic, strong) CBPeripheral *peripheral;
 @property (nonatomic, strong) NSNumber *RSSI;
-@property (nonatomic, copy) NSString *macAddress;
+@property (nonatomic, copy)   NSString *macAddress;
+@property (nonatomic, strong) NSDictionary *advertisementData;
+
 @end

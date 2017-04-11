@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "EDScanListVC.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +19,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)scanIt:(UIButton *)sender {
+    [self.navigationController pushViewController:[[EDScanListVC alloc] init] animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
